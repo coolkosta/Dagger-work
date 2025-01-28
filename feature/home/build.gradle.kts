@@ -35,8 +35,9 @@ android {
 
 dependencies {
     implementation(project(":core"))
-    implementation (libs.dagger)
-    kapt (libs.dagger.compiler)
+    implementation(libs.androidx.fragment.ktx)
+    implementation(libs.dagger)
+    kapt(libs.dagger.compiler)
     implementation(libs.retrofit)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

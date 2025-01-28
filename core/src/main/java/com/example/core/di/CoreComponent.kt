@@ -8,13 +8,6 @@ import javax.inject.Singleton
 @Singleton
 interface CoreComponent : NetworkApi {
 
-    /*@Component.Builder
-    interface Builder {
-        @BindsInstance
-        fun context(context: Context): Builder
-        fun build(): CoreComponent
-    }*/
-
     companion object {
         @Volatile
         private var instance: CoreComponent? = null
